@@ -1,0 +1,53 @@
+
+/* Ancla
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.ancla{
+	display: none;
+	position: relative;
+	width: 5rem;
+	height: 5rem;
+	margin-top: 3rem;
+	border: 2px solid #ffffff;
+	border-radius: 5rem;
+	color: #ffffff;
+
+	&:hover{
+		color: $color__brand;
+		border-color: $color__brand;
+	}
+
+
+	&::before{
+		content: '\e801';
+		@include centrado;
+		//width: 5rem;
+		//height: 5rem;
+
+		font-family: "garaje";
+		font-size: 2.4rem;
+		text-align: center;
+		line-height: 5rem;
+
+		-webkit-transform-origin: center center;
+		-ms-transform-origin: center center;
+		transform-origin: center center;
+
+		-webkit-transform: translate(-50%, -50%) rotate(-90deg);
+		-ms-transform: translate(-50%, -50%) rotate(-90deg);
+		transform: translate(-50%, -50%) rotate(-90deg);
+
+
+
+	}
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1024px) {
+	.ancla{
+		display: inline-block;
+	}
+}

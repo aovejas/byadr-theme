@@ -1,0 +1,67 @@
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.wrapper{ 
+	width: 90%; 
+	max-width: $size__content;
+	margin: 0 auto;
+}
+
+
+
+.column { 
+	float: left;
+	padding: 0 5rem;
+	&.column__full { width: 100%; }
+	&.column__half { width: 50%; }
+	&.column__third { width: 33.33%; }
+	&.column__fourth { width: 25%; }
+	&.column__two-thirds { width: 66.6%; }
+	&.column__three-fourth {width: 75%; }		
+	&.flow-opposite { float: right; }   
+	
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix::after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1024px) {
+	.column{
+		float: none;
+
+		&.column__half, 
+		&.column__third, 
+		&.column__fourth, 
+		&.column__two-thirds, 
+		&.column__three-fourth {
+			width: 100%;
+
+		} 		
+	}
+
+}
+
+
+@media only screen and (max-width: 412px) {
+	.column{
+
+		padding: 0 1rem;
+
+	}
+
+}

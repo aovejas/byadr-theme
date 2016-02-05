@@ -1,0 +1,87 @@
+/* Imágenes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+img{
+	height: auto;
+	max-width: 100%;
+}
+
+
+figure{
+	img{
+		height: auto;
+		max-width: 100%;
+	}
+	figcaption{
+		font-size: 90%;
+		margin: 1rem 0;
+	}
+}
+
+
+/* iFrames
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Alineación
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.alignright,
+.alignleft,
+.aligncenter,
+.alignnone{
+	margin: 2rem;
+}
+
+.alignright {
+	display: inline;
+    float: right;
+    margin-right: -4rem; 
+}
+
+
+
+.alignleft {
+	display: inline;
+    float: left;
+    margin-left: -4rem; 
+
+}
+
+.aligncenter{
+    clear: both;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+/* Pie de foto
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.wp-caption {
+	margin: 0 0 1rem;
+    max-width: 100%; 
+
+
+ 	.wp-caption-text {
+		margin: 1rem 0;
+	    font-size: 80%;
+	    line-height: 100%;
+	    text-align: center;	
+	}
+
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+
+
+}

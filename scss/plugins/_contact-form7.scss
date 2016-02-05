@@ -1,0 +1,15 @@
+.wpcf7-response-output{
+	color: #ffffff;
+
+
+	&.wpcf7-validation-errors{
+		border: none;
+		border-left: 2px solid red;
+	}
+
+	&.wpcf7-mail-sent-ok{
+		border: none;
+		border-left: 2px solid green;
+	}
+
+}

@@ -1,0 +1,69 @@
+/* Page Archive Cases
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.post-type-archive-cases{
+	position: relative;
+	padding-top:10rem;
+
+	.imgCase{
+
+		position: relative;
+
+		height: 30rem;
+
+		padding: 0;
+
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		background-color: rgba( $color__brand, 0);
+		background-blend-mode: multiply;
+
+		@include transicion;
+
+		&:hover{
+			background-color: rgba( $color__brand, 1);
+		}
+	}
+
+	.titleCase{
+		 
+		position:absolute;
+		bottom: 0;
+		left: 2rem;
+		width: 80%;	
+		
+		h2,
+		p{
+		 
+		background-color: #8dc4c8;
+		margin: 0.5rem 0;
+		color: #ffffff;
+		padding:0.5rem;
+
+		line-height: 100%;
+		
+		}
+
+		h2{
+			position: absolute;
+			bottom: 5rem;
+		}
+
+		p{
+			position: absolute;
+			bottom: 1rem;
+		}
+	}
+}
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	.post-type-archive-cases{
+		padding-top:6rem;
+	}
+
+}

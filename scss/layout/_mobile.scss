@@ -1,0 +1,38 @@
+/* Web
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.visible-web 	{ display: block; }
+.visible-tablet { display: none;  }
+.visible-mobile { display: none;  }
+
+.hide-web 	{ display: none; 	}
+.hide-tablet { display: block;  }
+.hide-mobile { display: block;  }
+
+
+
+/* Tablet
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 1024px) {
+	.visible-web 	{ display: none;  }
+	.visible-tablet { display: block; }
+	.visible-mobile { display: none;  }
+
+	.hide-web 	{ display: block; }
+	.hide-tablet { display: none; }
+	.hide-mobile { display: block; }
+}
+
+/* Mobile
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	.visible-web 	{ display: none;  }
+	.visible-tablet { display: none;  }
+	.visible-mobile { display: block; }
+
+	.hide-web 	{ display: block; 	}
+	.hide-tablet { display: block;  }
+	.hide-mobile { display: none;  }
+}

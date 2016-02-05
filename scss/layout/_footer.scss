@@ -1,0 +1,29 @@
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer{
+	position: relative;
+	padding: 5rem 0;
+	background-color: $color__brand-dark;
+	color: #ffffff;
+	
+	font-size: 1.4rem;
+
+	.column{
+		padding: 0;
+	}
+
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1024px) {
+	footer{
+		padding-top: 7rem;
+
+		text-align: center;
+	}
+}

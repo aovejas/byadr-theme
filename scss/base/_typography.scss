@@ -1,0 +1,128 @@
+
+/* Tipografia
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{ 
+	clear: both;
+}
+
+h1 { 
+
+}
+
+h2 { 
+
+}
+
+h3 { 
+
+}
+
+h4 { 
+
+}
+
+
+h5 { 
+
+}
+
+p{
+	margin-bottom: 3rem; 
+}
+
+strong{
+	font-weight: bold;
+}
+
+
+/* Blockquote // Citas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote{
+	margin: 0 15rem;
+	
+	&::before,
+	&::after {
+		content: "";
+	}
+	
+	p{
+		
+	}
+
+}
+
+
+/* Superíndice / Subíndice
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+sup, 
+sub {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+   font-size: .8em;
+}
+sub { top: 0.4em; }
+
+/* Otros
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+dfn, 
+cite, 
+em, 
+i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, 
+kbd, 
+tt, 
+var {
+
+}
+
+abbr, 
+acronym {
+	cursor: help;
+}
+
+mark, 
+ins {
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 412px) {
+
+}
+

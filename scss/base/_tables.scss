@@ -1,0 +1,21 @@
+
+/* Tablas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+table{
+	width: 100%;
+	margin: 1rem 0; 
+
+	td{
+		border: 1px solid $color__border;
+		text-align: center;
+	}
+	thead{
+		font-weight: bold;
+		background-color: $color__gray-lighter;
+	}
+
+	tbody{
+		background-color: #ffffff;
+	}
+}

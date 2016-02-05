@@ -1,0 +1,137 @@
+/*!
+Theme Name: byAdrenaline Theme
+Author: byAdrenaline Design Studio 
+Author URI: http://byadrenaline.com/
+Description: Desarrollo del tema Ad-hoc
+Version: 1.0
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: byadr
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––– 
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+INDICE CONTENIDOS
+	1.- Settings
+	2.- Base
+	3.- Modules
+	4.- Layout
+	5.- Plugins
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––– 
+				1.- Settings
+––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "settings/_variables.scss";
+
+@import "settings/_mixins.scss";
+
+@import "settings/_normalize.scss";
+
+@import "settings/_fontface.scss";
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––– 
+				2.- Base
+––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "base/_general.scss";
+
+@import "base/_typography.scss";
+
+@import "base/_links.scss";
+
+@import "base/_lists.scss";
+
+@import "base/_media.scss";
+
+@import "base/_buttons.scss";
+
+@import "base/_tables.scss";
+
+@import "base/_forms.scss";
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––– 
+				3.- Modules
+––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "modules/_menus.scss";
+
+@import "modules/_widgets.scss";
+
+@import "modules/_comments.scss";
+
+@import "modules/_gallery.scss";
+
+//@import "modules/_logos.scss";
+
+//@import "modules/_prevnext.scss";
+
+//@import "modules/_popup.scss";
+
+//@import "modules/_localizacion.scss";
+
+//@import "modules/_social.scss";
+
+//@import "modules/_ancla.scss";
+
+// Layout Builder
+
+//@import "modules/_text.scss";
+
+//@import "modules/_quote.scss";
+
+//@import "modules/_gallery.scss";
+
+//@import "modules/_video.scss";
+
+//@import "modules/_grid.scss";
+
+//@import "modules/_image.scss";
+
+//@import "modules/_cases.scss";
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––– 
+				4.- Layout
+––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "layout/_grid.scss";
+
+@import "layout/_posts.scss"; 
+
+//@import "layout/_mobile.scss";
+
+//@import "layout/_header.scss";
+
+//@import "layout/_hero.scss";
+
+//@import "layout/_footer.scss";
+
+//@import "layout/_equipo.scss";
+
+//@import "layout/_casesarchive.scss";
+
+//@import "layout/_blog.scss";
+
+//@import "layout/_contacto.scss";
+
+//@import "layout/_404.scss";
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––– 
+				5.- Plugins
+––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import "plugins/_contact-form7.scss";
+
+//@import "plugins/_magnific-popup.scss";
+
+
+

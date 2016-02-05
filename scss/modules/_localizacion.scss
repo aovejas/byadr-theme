@@ -1,0 +1,47 @@
+
+/* Modulo de localizacion
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.localizacion-module{
+
+	.column{
+		position: relative;
+		height: 60rem;
+
+		background-size: cover;
+
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			color: #ffffff;
+
+		
+			.centrar{
+				@include centrado;
+				width: 90%;
+	
+				h3{
+					margin: 0;
+				}
+			}
+
+			&:hover{
+				color: $color__brand-terciary;
+			}
+		}
+
+	}
+
+}
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	.localizacion-module{
+		.column{
+			height: 30rem;
+		}
+	}
+}

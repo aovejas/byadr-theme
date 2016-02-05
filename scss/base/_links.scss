@@ -1,0 +1,30 @@
+
+/* Enlaces
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a{
+	text-decoration: underline;
+	color: $color__brand;
+	@include transicion;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__brand-secondary;
+	}
+	
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+
+	&:visited {
+		color: $color__brand-terciary;
+	}
+	
+}
+

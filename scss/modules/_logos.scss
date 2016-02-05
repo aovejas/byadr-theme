@@ -1,0 +1,96 @@
+
+/* Logos
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.logo{
+	float: left;
+	width: 8rem;
+	height: 8rem;
+	margin: 0;
+
+	a{
+		display: block;
+		width: 8rem;
+		height: 8rem;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		text-indent: -9999px;
+	}
+}
+
+
+
+.logo--footer{
+	float: right;
+	height: 7.5rem;
+	padding-top: 1rem;
+	background-image: url('images/logo-color.svg');
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-size: 65px 75px;
+
+
+	span{
+		display: block;
+		letter-spacing: 2px;
+		margin-left: 8rem;
+
+		font-weight: bold;
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 100%;
+
+		small{
+			font-size: 1.2rem;
+			text-transform: none;
+			font-weight: 400;
+		}
+	}
+
+}
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1024px){
+
+	.logo--footer{
+		float: none;
+		width: 3rem;
+		height: 4rem;
+		background-size: contain;
+		position: absolute;
+		top: 1.5rem;
+		left: 50%;
+
+		-webkit-transform: 	translateX( -50%);
+		-ms-transform: 		translateX( -50%);
+		transform: 			translateX( -50%);
+
+		span{
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.logo{
+		float: none;
+		position: absolute;
+		top: 1rem;
+		left: 2rem;
+		width: 4rem;
+		height: 4rem;
+		z-index: 200;
+		a{
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+
+
+}

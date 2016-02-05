@@ -1,0 +1,72 @@
+
+/* Menus
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Menu principal
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+nav.nav__main{
+	clear: both; // Ningun elemento flotando a dcha o izda.
+	
+	display: block;
+	width: 100%;
+
+	margin: 2rem 0;
+
+
+	li{
+		position: relative;
+		float: left;
+		margin: 0 1rem;
+
+		@include transicion;
+
+		&:hover{
+			color: $color__brand;
+		} 
+
+		&.current_page_item,
+		&.current-menu-item,
+		&.current_page_ancestor,
+		&.current-menu-ancestor {
+	
+			background-color: $color__brand;
+			color: #ffffff;
+		}
+
+
+
+		> a{
+			display: block;
+			padding: 1rem 2rem;
+			text-transform: uppercase;
+			color: $color__gray;
+
+		}
+
+	}
+
+}
+
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+@media only screen and (max-width: 768px) {
+	nav.nav__main{
+
+	}
+}
+
+@media only screen and (max-width: 412px) {
+	
+
+}
+
+
+
+

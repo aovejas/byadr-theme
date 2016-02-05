@@ -1,0 +1,30 @@
+
+/* Quote
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.quote-module{
+	padding: 10rem 0;
+	background-color: $color__brand-light;
+	color: #ffffff;
+
+	.quote-autor{font-size: 90%;}
+
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 412px) {
+
+	.quote-module{
+		padding: 5rem 0;
+
+
+	}
+}

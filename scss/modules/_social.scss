@@ -1,0 +1,93 @@
+
+/* Modulo social media
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.social-section{
+	background-color: $color__gray;
+	padding: 5rem 0;
+	color: #ffffff;
+
+}
+
+.social-links{
+
+	li{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 1rem;
+		
+		padding: 0;
+		font-size: 2rem;
+		
+		&:first-child{
+			width: auto;
+			margin-right: 3rem;
+			line-height: 5rem;
+			border: none;
+			color: $color__brand;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+
+			&::after{
+				display: none;
+			}
+		}
+
+		&::before{
+			display: none;
+		}
+
+		
+
+
+		a{
+			position: relative;
+			display: block;
+			width: 5rem;
+			height: 5rem;
+			border: 2px solid #ffffff;
+			border-radius: 5rem;
+			color: #ffffff;
+			
+			&::after{
+				font-family: "garaje";
+				//font-size: 2.4rem;
+				
+
+				@include centrado;
+
+			}
+
+			&:hover{
+				color: $color__brand;
+				border-color: $color__brand;
+			}
+
+
+		}
+		&.social-twitter a::after{ content: '\e803'; }
+		&.social-linkedin a::after{ content: '\e804'; }
+		&.social-facebook a::after{ content: '\e805'; }
+		&.social-dribbble a::after{ content: '\e806'; }
+
+	}
+}
+
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 1024px) {
+	.social-links{
+		text-align: center;
+		li{
+			
+			&:first-child{
+				margin: 0;
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,56 @@
+
+/* Acordeon
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+dl.acordeon{
+	dt{
+		cursor: pointer;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $color__brand;
+
+		padding: 1rem 2rem;
+		margin-top: 5px;
+		border: 1px solid $color__border;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+
+		position: relative;
+	}
+
+	dt::after{
+		content: ">";
+		position: absolute;
+		top: 1rem;
+		right: 2rem;
+
+		-webkit-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+		
+		@include transicion;
+	}
+
+	dt.activo::after{
+		-webkit-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+
+	dt:hover,
+	dt.activo{
+		background-color: $color__gray-lighter;
+		color: $color__brand-secondary;
+	}
+
+	dd{
+		border: 1px solid $color__border;
+		border-top: none;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		margin-bottom: 1rem;
+		padding: 2rem;
+	}
+
+}

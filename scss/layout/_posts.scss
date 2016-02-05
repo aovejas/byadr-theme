@@ -1,0 +1,58 @@
+
+/* Posts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1rem;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1rem 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1rem;
+}
+
+
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+
+/* Infinite Scroll
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}

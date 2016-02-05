@@ -1,0 +1,34 @@
+
+/* Contact Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-template-contact{
+
+	article{
+		padding: 5rem 0;
+		text-align: center;
+	}
+
+	.contact-links{
+		div{
+			text-align: center;
+			padding: 3rem 0;
+			@include transicion;
+			&:first-child{
+				background-color: $color__brand-terciary;
+			}
+			&:last-child{
+				background-color: $color__brand-secondary;
+			}
+			&:hover{
+				//background-color: $color__brand;
+				.btn{
+					color: #ffffff;
+					border-color: #ffffff;
+				}
+			}
+		}
+		
+	}
+}
+

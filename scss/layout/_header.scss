@@ -1,0 +1,58 @@
+
+
+/* Page Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header{
+	position: absolute;
+	top: 3rem;
+	left: 0;
+
+	width: 100%;
+	z-index: 1000;
+
+	.post-type-archive-cases &,
+	.blog &,
+	.single-post &{
+		top:0;
+		padding: 1rem 0;
+		background-color: $color__brand-dark;
+
+	}
+
+
+
+}
+/*
+	.beta{
+		position: absolute;
+		top:0rem;
+		right: 0;
+		z-index: 1000;
+		color: #ffffff;
+		background-color: $color__brand;
+		padding: 0.5rem 1rem;
+
+		font-size: 1.2rem;
+
+	}
+*/
+
+
+/* Media queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+	header{
+
+		top: 0;	
+		z-index: 200;
+		
+		background-color: $color__gray;
+		padding: 1rem 0;
+		height: 6rem;
+
+
+	}
+
+}
+
