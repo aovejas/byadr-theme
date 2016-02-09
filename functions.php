@@ -184,8 +184,9 @@ require get_template_directory() . '/inc/extra-functions.php';
  *  Funciones ACF - Advance Custom Fields
  *
  * 1.- Deshabilitar Items Menu Admin
- * 2.- Theme Options
- * 3.- byAdrenaline Layout Builder
+ * 2.- Local JSON
+ * 3.- Theme Options
+ * 4.- byAdrenaline Layout Builder
  *
  */
 

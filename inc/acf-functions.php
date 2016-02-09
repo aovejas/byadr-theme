@@ -4,11 +4,11 @@
  *  Funciones ACF - Advance Custom Fields
  *
  * 1.- Deshabilitar Items Menu Admin
- * 2.- Theme Options
- * 3.- byAdrenaline Layout Builder
+ * 2.- Local JSON
+ * 3.- Theme Options
+ * 4.- byAdrenaline Layout Builder
  *
  */
-
 
 
 /* 1.-  Deshabilitar ACF del Menu Admin
@@ -17,7 +17,45 @@
 //add_filter('acf/settings/show_admin', '__return_false');
 
 
-/* 2.- Theme Options
+/* 2.-  Local JSON
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Establecemos directorio almacenaje
+
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+ 
+function my_acf_json_save_point( $path ) {
+    
+    // update path
+    $path = get_stylesheet_directory() . '/inc/acf/acf-json';
+    
+    
+    // return
+    return $path;
+    
+}
+
+// Establecemos directorio carga
+
+add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+
+function my_acf_json_load_point( $paths ) {
+    
+    // remove original path (optional)
+    unset($paths[0]);
+    
+    
+    // append path
+    $paths[] = get_stylesheet_directory() . '/inc/acf/acf-json';
+    
+    
+    // return
+    return $paths;
+    
+}
+
+
+/* 3.- Theme Options
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /**
@@ -40,10 +78,10 @@ if( function_exists( 'acf_add_options_page' ) ){
 	));
 }
 
-require get_template_directory() . '/inc/theme-options-functions.php';
+require get_template_directory() . '/inc/acf/theme-options-functions.php';
 
 
-/* 3.- byAdrenaline Layout Builder
+/* 4.- byAdrenaline Layout Builder
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 if( ! function_exists( 'byadr_layout_builder' ) ) {
@@ -53,22 +91,22 @@ if( ! function_exists( 'byadr_layout_builder' ) ) {
 		if( have_rows('layout_builder') ) : while(have_rows( 'layout_builder' )) : the_row();
 
 			// TEXT BLOCK
-			require get_template_directory() . '/inc/layout-builder/lb-text-block.php';
+			require get_template_directory() . '/inc/acf/lb-text-block.php';
 
 			// QUOTE
-			require get_template_directory() . '/inc/layout-builder/lb-quote.php';
+			require get_template_directory() . '/inc/acf/lb-quote.php';
 
 			// GALLERY
-			require get_template_directory() . '/inc/layout-builder/lb-gallery.php';
+			require get_template_directory() . '/inc/acf/lb-gallery.php';
 
 			// VIDEO
-			require get_template_directory() . '/inc/layout-builder/lb-video.php';
+			require get_template_directory() . '/inc/acf/lb-video.php';
 
 			// IMAGE
-			require get_template_directory() . '/inc/layout-builder/lb-image.php';
+			require get_template_directory() . '/inc/acf/lb-image.php';
 
 			// MOSAICO
-			require get_template_directory() . '/inc/layout-builder/lb-grid.php';
+			require get_template_directory() . '/inc/acf/lb-grid.php';
 
 
 		endwhile;endif; 
