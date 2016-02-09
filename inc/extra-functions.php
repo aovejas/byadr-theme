@@ -8,6 +8,7 @@
  * 3.- Habilitamos SVG
  * 4.- Custom oEmbed Videos
  * 5.- Eliminar estilos de Galería por defecto
+ * 6.- Shortcodes
  *
  */
 

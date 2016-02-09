@@ -178,6 +178,7 @@ require get_template_directory() . '/inc/infinite-next-post.php';
  * 3.- Habilitamos SVG
  * 4.- Custom oEmbed Videos
  * 5.- Eliminar estilos de Galería por defecto
+ * 6.- Shortcodes ***
  *
  */
 
@@ -185,35 +186,15 @@ require get_template_directory() . '/inc/extra-functions.php';
 
 
 /**
- * Deshabilitar Items Menu Admin
+ *  Funciones ACF - Advance Custom Fields
  *
- * 1.- ACF - Advance Custom Fields
+ * 1.- Deshabilitar Items Menu Admin
+ * 2.- Theme Options
+ * 3.- byAdrenaline Layout Builder
  *
  */
 
-//add_filter('acf/settings/show_admin', '__return_false');
-
-
-
-
-
-
-
-/* Framework byAdrenaline
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
-
-
-
-include_once('inc/options.php');
-
-include_once('inc/acf-fields.php');
-
-include_once('inc/layout-builder.php');
-
-include_once('inc/shortcodes.php');
-
-*/
-
+require get_template_directory() . '/inc/acf-functions.php';
 
 
 
