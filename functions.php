@@ -165,12 +165,6 @@ add_action( 'wp_enqueue_scripts', 'byadr_set_styles_js' );
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /**
- * Infinite Next Post
- */
-require get_template_directory() . '/inc/infinite-next-post.php';
-
-
-/**
  * Funciones Extras para el Theme
  *
  * 1.- Longitud del excerpt
@@ -178,7 +172,8 @@ require get_template_directory() . '/inc/infinite-next-post.php';
  * 3.- Habilitamos SVG
  * 4.- Custom oEmbed Videos
  * 5.- Eliminar estilos de Galería por defecto
- * 6.- Shortcodes ***
+ * 6.- Infinite Prev/Next post looping
+ * X.- Shortcodes ***
  *
  */
 
