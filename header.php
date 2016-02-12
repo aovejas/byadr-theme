@@ -16,6 +16,6 @@
 <body <?php body_class(); ?>>
 
 	<header>
-		
+		<?php byadr_theme_logo(); ?>
 	</header>
 	

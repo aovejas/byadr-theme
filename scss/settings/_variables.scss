@@ -1,27 +1,30 @@
 // Documento
 
-$size__content: 120rem;
+$size__content: 96rem;
 
 // Tipografia
 
-$font__font-family:		'Montserrat', helvetica, arial, sans-serif;
+$font__font-family:		'Roboto', helvetica, arial, sans-serif;
+$font__font-family-secondary: 'Montserrat', helvetica, arial, sans-serif;
 $font__font-size:		1.6rem;
 $font__line-height: 	1.5;
 
 
 // Colores
 
-$color__brand: 				#68b3b7;
-$color__brand-light:		#3fd5de;
-$color__brand-dark:			#1f2329;
+$color__brand: 				#FF36A9; // Rosa logo
+$color__brand-light:		#3fd5de; // *** 
+$color__brand-dark:			#1f2329; // ***
 
-$color__brand-secondary: 	#ff2155;
-$color__brand-terciary: 	#c1ed00;
+$color__brand-secondary: 	  #0092FF; // Azul logo
+$color__brand-secondary-dark: #7AA7DC; // Azul footer
 
-//$color__gray-dark:  		#232527; 
-$color__gray:  	 			#232527; //Body copy
-$color__gray-light: 		#686868; 
-$color__gray-lighter:  		#f2f3f8;
+$color__brand-terciary: 	#000000; // Azul Logo
 
-$color__border: 	#dddddd;
+$color__gray-dark:  		#454545; 
+$color__gray:  	 			#5A5A5A; //Body copy
+$color__gray-light: 		#9B9B9B; 
+$color__gray-lighter:  		#f2f3f8; // ***
+
+$color__border: 	#dddddd; // ***
 

@@ -1,8 +1,8 @@
 /*!
-Theme Name: Lases Avalon Theme
+Theme Name: Laser Avalon Theme
 Author: byAdrenaline Design Studio 
 Author URI: http://byadrenaline.com/
-Description: Desarrollo del tema Ad-hoc
+Description: Desarrollo del tema Ad-hoc para Laser Avalon
 Version: 1.0
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -69,7 +69,7 @@ INDICE DE CONTENIDOS
 
 @import "modules/_gallery.scss";
 
-//@import "modules/_logos.scss";
+@import "modules/_logos.scss";
 
 //@import "modules/_prevnext.scss";
 
@@ -83,20 +83,17 @@ INDICE DE CONTENIDOS
 
 // Layout Builder
 
-//@import "modules/builder/_text.scss";
+@import "modules/builder/_text.scss";
 
-//@import "modules/builder/_quote.scss";
+@import "modules/builder/_quote.scss";
+
+@import "modules/builder/_video.scss";
+
+@import "modules/builder/_grid.scss";
+
+@import "modules/builder/_image.scss";
 
 //@import "modules/builder/_gallery.scss";
-
-//@import "modules/builder/_video.scss";
-
-//@import "modules/builder/_grid.scss";
-
-//@import "modules/builder/_image.scss";
-
-//@import "modules/builder/_cases.scss";
-
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––– 
 				4.- Layout

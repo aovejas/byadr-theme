@@ -2,16 +2,13 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .wrapper{ 
-	width: 90%; 
+	width: 100%; 
 	max-width: $size__content;
 	margin: 0 auto;
 }
-
-
-
 .column { 
 	float: left;
-	padding: 0 5rem;
+	padding: 0;
 	&.column__full { width: 100%; }
 	&.column__half { width: 50%; }
 	&.column__third { width: 33.33%; }

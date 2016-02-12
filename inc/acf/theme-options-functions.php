@@ -17,6 +17,8 @@ if( ! function_exists( 'byadr_theme_logo' ) ){
 
 	function byadr_theme_logo(){
 		$logo = get_field('logo_theme', 'option');
+
+		if($logo):
 		?>
 
 		<h2 class="logo">
@@ -26,6 +28,7 @@ if( ! function_exists( 'byadr_theme_logo' ) ){
 		</h2>
 
 		<?php
+		endif;
 	}
 }
 

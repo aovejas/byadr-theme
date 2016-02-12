@@ -119,7 +119,7 @@ if ( ! function_exists( 'byadr_set_styles_js' ) ) :
 
 	function byadr_set_styles_js() {
 	    // Google fonts
-	    wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
+	    wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,300,700');
 	    wp_enqueue_style( 'google-fonts' );
 
 		// Hoja estilo principal
@@ -129,6 +129,7 @@ if ( ! function_exists( 'byadr_set_styles_js' ) ) :
 	    	// LLamamos a jQuery
 			wp_enqueue_script('jquery');
 
+			/*
 			// Insertamos script Masonry
 			wp_register_script( 'masonry',  get_bloginfo('template_directory') . '/js/min/masonry.pkgd.min.js', false, null, true);
 			wp_enqueue_script('masonry');
@@ -140,7 +141,8 @@ if ( ! function_exists( 'byadr_set_styles_js' ) ) :
 			// Insertamos script Masonry
 			wp_register_script( 'easings',  get_bloginfo('template_directory') . '/js/min/jquery.easing.1.3.min.js', false, null, true);
 			wp_enqueue_script('easings');
-
+			*/
+			
 			// Insertamos script para Comentarios
 			if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 				wp_enqueue_script( 'comment-reply' );

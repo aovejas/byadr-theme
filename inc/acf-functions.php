@@ -88,27 +88,36 @@ if( ! function_exists( 'byadr_layout_builder' ) ) {
 
 	function byadr_layout_builder(){
 
-		if( have_rows('layout_builder') ) : while(have_rows( 'layout_builder' )) : the_row();
+		$lb = get_field('activar_layout_builder');
 
-			// TEXT BLOCK
-			require get_template_directory() . '/inc/acf/lb-text-block.php';
+		if($lb):
 
-			// QUOTE
-			require get_template_directory() . '/inc/acf/lb-quote.php';
+			if( have_rows('layout_builder') ) : while(have_rows( 'layout_builder' )) : the_row();
 
-			// GALLERY
-			require get_template_directory() . '/inc/acf/lb-gallery.php';
+				// TEXT BLOCK
+				require get_template_directory() . '/inc/acf/lb-text-block.php';
 
-			// VIDEO
-			require get_template_directory() . '/inc/acf/lb-video.php';
+				// QUOTE
+				require get_template_directory() . '/inc/acf/lb-quote.php';
 
-			// IMAGE
-			require get_template_directory() . '/inc/acf/lb-image.php';
+				// GALLERY
+				require get_template_directory() . '/inc/acf/lb-gallery.php';
 
-			// MOSAICO
-			require get_template_directory() . '/inc/acf/lb-grid.php';
+				// VIDEO
+				require get_template_directory() . '/inc/acf/lb-video.php';
 
+				// IMAGE
+				require get_template_directory() . '/inc/acf/lb-image.php';
 
-		endwhile;endif; 
+				// MOSAICO
+				require get_template_directory() . '/inc/acf/lb-grid.php';
+
+			endwhile;endif; 
+		else:
+
+			echo get_template_part('template-part/content', 'default');
+
+		endif;
 	} 
 } 
+
